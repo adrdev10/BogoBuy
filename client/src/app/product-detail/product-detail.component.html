@@ -1,0 +1,13 @@
+<div *ngIf="product" class="container description">
+    <h2 class="name">{{ product.name | uppercase }} Details</h2>
+  <div>
+      <ul>
+          <li><span>Description: </span>{{product.description}}</li>
+        <li><span>Warranty: </span>{{product.warranty}}</li>
+        <li><span>Rating: </span>{{product.rating}}</li>
+        <li><span>Seller: </span>{{product.seller}}</li>
+        <li><span>Price: </span>{{product.price | currency:'USD'}}</li>
+        
+      </ul>
+  </div>
+</div>

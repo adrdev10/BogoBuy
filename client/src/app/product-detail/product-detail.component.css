@@ -1,0 +1,17 @@
+.description{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    padding: 3.5em;
+    margin-top: 1.5em;
+}
+
+.name {
+    text-align: center;
+}
+
+.description li {
+    padding: 7px;
+}

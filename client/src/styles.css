@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+ 
+  h2, h3 {
+    color: #444;
+    font-weight: lighter;
+    font-family: 'Anton', sans-serif;
+  }
+
+  body, input[text], button {
+    color: #888;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .jumbotron{
+      height: 100vh;
+  }
+
+  .vertical-center {
+    min-height: 100%; 
+    min-height: 100vh; 
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  .container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      justify-content: center;
+  }
+
+  .card{
+      width: 300px;
+      margin: 2.0em;
+  }
+
+  .input-group{
+      height: 60px;
+  }
+
+  a{
+      cursor: pointer;
+  }
+
+ .navbar-brand{
+      font-size: 1.6rem;
+  }
+
+  .jumbotron{
+      margin: 0;
+      padding: 0;
+      background-image: url("https://static.pexels.com/photos/235994/pexels-photo-235994.jpeg");
+      background-color: linear-gradient(rgba(0,0,0,1));
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .jumbotron p{
+      font-size: 4em;
+      color:black;
+      font-family: 'Anton', sans-serif;
+  }
+
+  footer{
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+
+

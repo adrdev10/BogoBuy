@@ -1,0 +1,21 @@
+<div class="input-group">
+  <input type="search" class="form-control" [(ngModel)]="filterText" placeholder="search text goes here" aria-label="Search">
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</div>
+<app-product-detail [product]="selectedProduct"></app-product-detail>
+<div class="container">
+    <!-- The *ngFor is Angular's repeater directive. It repeats the host element for each json object in the database. -->
+  <div class="card" *ngFor = "let product of products | filter: filterText" (click)="onSelect(product)" >
+    <div class="card-body">
+        <!-- Angular's interpolation binding syntax. One direction data binding -->
+      <h4 class="card-title">{{product.name}}</h4>
+      <p class="card-text">{{product.description}}</p>
+      <p class="card-text">{{product.price | currency:USD}}</p>
+      <a (click)='onSelect(product)' class="btn btn-primary">BUY NOW</a>
+    </div>
+  </div>
+</div>
+
+
+
+
